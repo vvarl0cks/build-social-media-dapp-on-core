@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract SocialMediaV1 {
+contract SocialMedia {
 
     // Struct to represent a User
     struct User {
@@ -18,14 +18,14 @@ contract SocialMediaV1 {
         string content;
         //  ASSIGNMENT #2
         YOUR_CODE_GOES_HERE likes;
-        mapping(address => bool) likedBy;
-        uint[] commentIds;
+        mapping(address => bool) likedBy; // Mapping to track which users have liked the post
+        uint[] commentIds;  // Array to store comment IDs associated with the post
     }
 
     // Struct to represent a Comment
     struct Comment {
         uint commentId;
-        string authorUsername;
+        string authorUsername; // Store the username of the commenter
         uint postId;
         //  ASSIGNMENT #3
         YOUR_CODE_GOES_HERE content;
