@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract SocialMedia {
+contract MetaCircle {
 
     // Struct to represent a User
     struct User {
